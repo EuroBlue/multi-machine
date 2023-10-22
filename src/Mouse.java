@@ -1,6 +1,4 @@
 import java.awt.*;
-import java.awt.event.MouseAdapter;
-
 public class Mouse extends InputDevice{
     public Mouse(Machine m)
     {
@@ -15,7 +13,6 @@ public class Mouse extends InputDevice{
         return MouseInfo.getPointerInfo().getLocation().y;
     }
     public void setPosition(int x, int y) {
-        getActiveMachine().getRobot().mouseMove(x,y);
+        getActiveMachine().getRobot().mouseMove(x, y);
     }
-
 }
